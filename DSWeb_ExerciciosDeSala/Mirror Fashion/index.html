@@ -52,19 +52,37 @@
                 <td colspan="2" align="center">OK</td>
             </tr>
         </table>
+        <br>
         <form action="">
-            <div>
-            <p>Seu nome:</p>
-            <input type="text">
-            <p>Seu E-mail:</p>
-            <input type="text">
-            </div>
+            <fieldset>
+                <legend>Informações</legend>
+                    <br>
+                    <label for="nome">Seu Nome:</label> 
+                    <input type="text">
+                    <br>
+                    <br>
+                    <label for="genero">Seu Genero:</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="masculino" id="">
+                    <label for="">Masculino</label>
+                    <input type="radio" name="feminino" id="">
+                    <label for="">Feminino</label>
+                    <br>
+                    <br>
+                    <label for="E-mail">Seu E-mail:</label>
+                    <input type="text">
+            </fieldset>
             <br>
             <H3>Selecione o produto: </H3>
             <select name="Itens" id="">
-                <option value="ordenadas">Listas Ordenadas</option>
-                <option value="naoOrdenadas">Listas Não Ordenadas</option>
-                <option value="definicao">Listas de Definição</option>
+                <optgroup label="Tipo 01">
+                    <option value="ordenadas">Listas Ordenadas</option>
+                    <option value="naoOrdenadas">Listas Não Ordenadas</option>
+                </optgroup>
+                <optgroup label="Tipo 02"> 
+                    <option value="definicao">Listas de Definição</option>
+                </optgroup>
             </select>
             <input type="submit" value="Submit">
         </form>
@@ -73,6 +91,12 @@
             <p>A sensação de passividade leva o azul a ser a cor mais usada em embalagens de produtos para dormir, tranquilizantes, roupas de cama, pijamas e camisolas.</p>
         </div>
         <p>Essa cor é usada para o tratamento de problemas de sono e insônia ou relacionados ao estresse, ajudando a trazer calma e harmonia ao organismo.</p>
+        <h2>Comente com foi sua experienca com nossos produtos:</h2>
+        <textarea name="comentario" id="" cols="100" rows="10">
+
+        </textarea>
+        <br>
+        <input type="button" value="publicar">
         <p>Aulas do Professor: <a href="https://youtu.be/NTtH4nVkdNE">Sidartha Carvalho</a></p>
     </body>
 </html>
