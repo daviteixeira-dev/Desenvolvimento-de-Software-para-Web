@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Projeto Prático: HTML + CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Projeto adaptado - Des Web</h1>
+        <h3>Exemplo de formulário de pesquisa (Survey)</h3>
+    </header>
+
+    <main id="container">
+        <section id="form">
+            <div id="card">
+                <h4>Nome</h4>
+                <input type="text" value="Coloque seu nome...">
+
+                <h4>Email</h4>
+                <input type="text" value="Coloque o seu Email...">
+
+                <h4>Idade<label> (opcional)</label></h4>
+                <input type="text" value="Idade">
+
+                <h4>Qual opção melhor descreve o seu estado atual?</h4>
+                <select name="ocupações" id="ocupacoes">
+                    <option value="ocupacao">Selecione a ocupação</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="clt">CLT</option>
+                    <option value="naoDizer">Prefiro não dizer</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                <h4>Você recomendaria esse projeto?</h4>
+                <input type="radio" name="Com Certeza" id="comCerteza">
+                <label>Com certeza!</label>
+                <br>
+                <input type="radio" name="Talvez" id="talvez">
+                <label>Talvez</label>
+                <br>
+                <input type="radio" name="Não sei" id="naoSei">
+                <label>Não sei</label>
+                <br>
+
+                <h4>O que você gostaria de melhorar?<label> (Selecione quantos quiser.)</label></h4>
+                <input type="checkbox" name="Ter mais tempo de estudar" id="tempoEstudar">
+                <label>Ter mais tempo de estudar</label>
+                <br>
+                <input type="checkbox" name="Estudar mais o que gosto" id="estudarGostar">
+                <label>Estudar mais o que gosto</label>
+                <br>
+                <input type="checkbox" name="Gêrencia de projetos" id="gerenciaProjetos">
+                <label>Gêrencia de projetos</label>
+                <br>
+                <input type="checkbox" name="NodeJS" id="NodeJS">
+                <label>NodeJS</label>
+                <br>
+
+                <h4>Algum comentario ou sugestão?</h4>
+                <textarea name="Insira o seu comentário ou sugestão aqui..." 
+                id="comentario" cols="30" rows="10">Insira o seu comentário ou sugestão aqui...</textarea>
+                <br>
+                <input type="button" value="Enviar">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
