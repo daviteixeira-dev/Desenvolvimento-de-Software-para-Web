@@ -5,16 +5,46 @@
 }
 
 body{
-    background-image:url(/img/background.jpg);
+    background-image:url(img/background.jpg);
+    background-repeat: no-repeat;
 }
 
 #container {
     border: 1px solid black;
-    width: min(90vw, 400px);
+    width: min(90vw, 500px);
     margin: auto;
+    margin-bottom: 3rem;
 }
 
 header {
     padding: 2rem 0 2rem;
     text-align: center;
+}
+
+header h1 {
+    color: #e7e6eb;
+}
+
+header h3 {
+    color: #e7e6eb;
+}
+#card {
+    background-color: #282948;
+    padding: 1.5rem 2rem;
+}
+#card h4 {
+    color: #e7e6eb;
+}
+
+#card label {
+    color: #e7e6eb;
+}
+
+#butao {
+    color: white;
+    background-color: #37AF65;
+    height: 45px;
+    width: 440px;
+    border: none;
+    margin: 1rem 0rem 1rem 0rem;
 }
