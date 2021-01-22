@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,13 @@
         <section id="form">
             <div id="card">
                 <h4>Nome</h4>
-                <input type="text" value="Coloque seu nome...">
+                <input type="text" placeholder="Coloque seu nome..." class="first-information">
 
                 <h4>Email</h4>
-                <input type="text" value="Coloque o seu Email...">
+                <input type="text" placeholder="Coloque o seu Email..." class="first-information">
 
-                <h4>Idade<label> (opcional)</label></h4>
-                <input type="text" value="Idade">
+                <h4>Idade<small> (opcional)</small></h4>
+                <input type="text" placeholder="Idade" class="first-information">
 
                 <h4>Qual opção melhor descreve o seu estado atual?</h4>
                 <select name="ocupações" id="ocupacoes">
@@ -34,35 +34,37 @@
                 </select>
                 
                 <h4>Você recomendaria esse projeto?</h4>
-                <input type="radio" name="Com Certeza" id="comCerteza">
-                <label>Com certeza!</label>
+                <input type="radio" name="Com Certeza" class="option">
+                <label class="option">Com certeza!</label>
                 <br>
-                <input type="radio" name="Talvez" id="talvez">
-                <label>Talvez</label>
+                <input type="radio" name="Talvez" class="option">
+                <label class="option">Talvez</label>
                 <br>
-                <input type="radio" name="Não sei" id="naoSei">
-                <label>Não sei</label>
+                <input type="radio" name="Não sei" class="option">
+                <label class="option">Não sei</label>
                 <br>
 
-                <h4>O que você gostaria de melhorar?<label> (Selecione quantos quiser.)</label></h4>
-                <input type="checkbox" name="Ter mais tempo de estudar" id="tempoEstudar">
-                <label>Ter mais tempo de estudar</label>
+                <h4>O que você gostaria de melhorar?<small> (Selecione quantos quiser.)</small></h4>
+                <input type="checkbox" name="Ter mais tempo de estudar" class="multiple-choices">
+                <label class="multiple-choices">Ter mais tempo de estudar</label>
                 <br>
-                <input type="checkbox" name="Estudar mais o que gosto" id="estudarGostar">
-                <label>Estudar mais o que gosto</label>
+                <input type="checkbox" name="Estudar mais o que gosto" class="multiple-choices">
+                <label class="multiple-choices">Estudar mais o que gosto</label>
                 <br>
-                <input type="checkbox" name="Gêrencia de projetos" id="gerenciaProjetos">
-                <label>Gêrencia de projetos</label>
+                <input type="checkbox" name="Gêrencia de projetos" class="multiple-choices">
+                <label class="multiple-choices">Gêrencia de projetos</label>
                 <br>
-                <input type="checkbox" name="NodeJS" id="NodeJS">
-                <label>NodeJS</label>
+                <input type="checkbox" name="NodeJS" class="multiple-choices">
+                <label class="multiple-choices">NodeJS</label>
                 <br>
 
                 <h4>Algum comentario ou sugestão?</h4>
                 <textarea name="Insira o seu comentário ou sugestão aqui..." 
-                id="comentario" cols="60" rows="8">Insira o seu comentário ou sugestão aqui...</textarea>
+                id="comentario" cols="60" rows="8" placeholder="Insira o seu comentário ou sugestão aqui..."></textarea>
                 <br>
-                <input type="button" value="Enviar" id="butao">
+                <div class="action">
+                    <a onclick="" href="#" class="button">Enviar</a>
+                </div>
             </div>
         </section>
     </main>

@@ -7,17 +7,19 @@
 body{
     background-image:url(img/background.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
 #container {
-    border: 1px solid black;
     width: min(90vw, 500px);
     margin: auto;
     margin-bottom: 3rem;
 }
 
 header {
-    padding: 2rem 0 2rem;
+    padding: 2rem 0rem  1rem 0rem;
     text-align: center;
 }
 
@@ -27,8 +29,46 @@ header h1 {
 
 header h3 {
     color: #e7e6eb;
+    font-size: small;
 }
+
+h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.first-information {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 10px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0px 0px 0px 10px;
+    color: #5a5a5a;
+}
+
+textarea {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+}
+
+.option {
+    margin-bottom: 0.5rem;
+}
+
+.multiple-choices {
+    margin-bottom: 0.5rem;
+}
+
 #card {
+    border-radius: 0.25rem;
     background-color: #282948;
     padding: 1.5rem 2rem;
 }
@@ -40,11 +80,18 @@ header h3 {
     color: #e7e6eb;
 }
 
-#butao {
+.button {
     color: white;
     background-color: #37AF65;
+    text-decoration: none;
     height: 45px;
-    width: 440px;
-    border: none;
-    margin: 1rem 0rem 1rem 0rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #47e283;
 }
