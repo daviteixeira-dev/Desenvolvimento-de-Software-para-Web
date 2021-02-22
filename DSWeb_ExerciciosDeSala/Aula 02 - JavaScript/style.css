@@ -1,0 +1,12 @@
+
+body{
+    background-color: rgb(39, 36, 36);
+    font-family:Arial, Helvetica, sans-serif
+}
+#card{
+    border: 5px solid black;
+    margin: 10% 40%;
+    text-align: center;
+    border-radius: 0.50rem;
+    background-color: rgb(253, 255, 255);
+}
