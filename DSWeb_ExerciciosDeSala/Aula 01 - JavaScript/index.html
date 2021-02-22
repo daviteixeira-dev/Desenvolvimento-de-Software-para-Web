@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 01 de JavaScript</title>
+</head>
+<body>
+    <h1 id="meup">Texto antigo usando HTML puro!</h1>
+    <button type="button" onclick="alterarTexto()">Mudar</button>
+
+    <h1>Usando JS para alterar atributos!</h1>
+    <p>Exemplo de lâmpada acessa e apagada.</p>
+
+    <div>
+        <img id="lamp" src="img/pic_bulboff.gif" alt="" height="200">
+        <br>
+        <button type="button" onclick="LigarLamp()">Ligar Lâmpada</button>
+        <br>
+        <br>
+        <button type="button" onclick="DesligarLamp()">Desligar Lâmpada</button>
+    </div>
+</body>
+
+<script>
+    function alterarTexto(){
+        document.getElementById('meup').innerHTML = 'Novo texto usando JavaScript!'
+    }
+
+    function LigarLamp(){
+        document.getElementById('lamp').src = 'img/pic_bulbon.gif'
+    }
+
+    function DesligarLamp(){
+        document.getElementById('lamp').src = 'img/pic_bulboff.gif'
+    }
+
+</script>
+</html>
